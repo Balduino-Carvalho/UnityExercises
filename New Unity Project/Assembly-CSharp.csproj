@@ -36,10 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\healthBar.cs" />
      <Compile Include="Assets\Exercise01\Spawner.cs" />
      <Compile Include="Assets\Exercise01\Wall.cs" />
      <Compile Include="Assets\Exercise01\Player.cs" />
-     <Compile Include="Assets\Scripts\healthBar.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -625,6 +626,9 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/baldu/UnityExercises/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/baldu/UnityExercises/New Unity Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/baldu/UnityExercises/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -633,9 +637,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Users/baldu/UnityExercises/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/baldu/UnityExercises/New Unity Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
