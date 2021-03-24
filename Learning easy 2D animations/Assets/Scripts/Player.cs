@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
     private SpriteRenderer sprite;
+    public Transform EnergyBallPoint;
+    public GameObject energyBall;
+    public Transform backPoint;
+    
     
     void Start()
     {
@@ -24,6 +28,19 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+       //soltar bola de energia
+       if (Input.GetKeyDown(KeyCode.X))
+       {
+           GameObject bullet = Instantiate(energyBall);
+           if(!sprite.flipX)
+           {
+           bullet.transform.position = EnergyBallPoint.transform.position;
+           }
+           else
+           {
+            bullet.transform.position = backPoint.transform.position;
+           }
+       }
         //Movimento
         if (Input.GetKey(KeyCode.LeftArrow) && !isAtk)
         {
