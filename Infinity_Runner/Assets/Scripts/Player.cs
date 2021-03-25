@@ -5,9 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rig;
-    
+    public Animator anim;
+
     public float speed;
     public float JumpForce;
+    private bool Jumping;
 
     void Start()
     {
@@ -21,9 +23,22 @@ public class Player : MonoBehaviour
    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //pulo
+        if (Input.GetKeyDown(KeyCode.Space) && !Jumping)
         {
             rig.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            anim.SetBool("isJumping", true);
+            Jumping = true;
+        }
+    }
+
+    //verificador se está pulando
+    void OnCollisionEnter2D (Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            anim.SetBool("isJumping", false);
+            Jumping = false;
         }
     }
 }
