@@ -38,12 +38,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Platform.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\SpawnPlatform.cs" />
+     <Compile Include="Assets\Scripts\BombEnemy.cs" />
+     <Compile Include="Assets\Scripts\Bomb.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\SpawnEnemies.cs" />
+     <Compile Include="Assets\Scripts\SpawnPlatform.cs" />
      <Compile Include="Assets\Scripts\FlyingEnemy.cs" />
-     <Compile Include="Assets\Scripts\Bomb.cs" />
-     <Compile Include="Assets\Scripts\BombEnemy.cs" />
+     <Compile Include="Assets\Scripts\SpawnEnemiesPlatform.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

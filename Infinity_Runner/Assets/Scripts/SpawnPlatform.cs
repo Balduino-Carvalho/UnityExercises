@@ -57,6 +57,11 @@ public class SpawnPlatform : MonoBehaviour
     public void Recycle(GameObject platform)
     {
         platform.transform.position = new Vector2(offset, -4.5f);
+        if (platform.GetComponent<Platform>().spawnObj != null)
+        {
+            platform.GetComponent<Platform>().spawnObj.SpawnGroundEnemy();
+        }
+
         offset +=30f;
     }
 }
