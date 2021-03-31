@@ -36,16 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Platform.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\BombEnemy.cs" />
-     <Compile Include="Assets\Scripts\Bomb.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\SpawnEnemies.cs" />
-     <Compile Include="Assets\Scripts\SpawnPlatform.cs" />
-     <Compile Include="Assets\Scripts\FlyingEnemy.cs" />
-     <Compile Include="Assets\Scripts\SpawnEnemiesPlatform.cs" />
-     <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Platforms\SpawnEnemiesPlatform.cs" />
+     <Compile Include="Assets\Scripts\Platforms\Platform.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Enemies\BombEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Bomb.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Enemies\SpawnEnemies.cs" />
+     <Compile Include="Assets\Scripts\Player\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Platforms\SpawnPlatform.cs" />
+     <Compile Include="Assets\Scripts\Enemies\FlyingEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Enemies.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
