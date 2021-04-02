@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1224124679366102466}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: finalPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6373570947863987460}
   - component: {fileID: 6725255586655958506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlatformC
   m_TagString: Untagged
   m_Icon: {fileID: 0}

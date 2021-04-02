@@ -23,6 +23,7 @@ public class Enemies : MonoBehaviour
       if (collision.CompareTag("bullet"))
       {
           ApplyDamage(collision.GetComponent<Projectile>().bulletDamage);
+         collision.GetComponent<Projectile>().OnHit(); 
       }
     }
 
