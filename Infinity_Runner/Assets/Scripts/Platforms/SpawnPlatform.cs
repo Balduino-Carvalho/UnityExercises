@@ -43,6 +43,7 @@ public class SpawnPlatform : MonoBehaviour
         //reciclar a plataforma
         if (distance >= 1)
         {
+            
             Recycle (currentPlatforms[platformIndex].gameObject);
             platformIndex++;
             if(platformIndex > currentPlatforms.Count -1)
@@ -56,6 +57,7 @@ public class SpawnPlatform : MonoBehaviour
 
     public void Recycle(GameObject platform)
     {
+        
         platform.transform.position = new Vector2(offset, -4.5f);
         if (platform.GetComponent<Platform>().spawnObj != null)
         {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int hp;
+    
     private Rigidbody2D rig;
     public Animator anim;
 
@@ -40,6 +42,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void OnHit(int dmg)
+    {
+        hp -= dmg;
+        if (hp <= 0)
+        {
+            GameController.instance.ShowGameOver();
+        }
+    }
+    
     //verificador se está pulando
     void OnCollisionEnter2D (Collision2D collision)
     {
