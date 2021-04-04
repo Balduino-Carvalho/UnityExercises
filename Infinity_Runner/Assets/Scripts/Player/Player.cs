@@ -28,20 +28,36 @@ public class Player : MonoBehaviour
    
     void Update()
     {
-        //pulo
-        if (Input.GetKeyDown(KeyCode.Space) && !Jumping)
+         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            rig.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-            anim.SetBool("isJumping", true);
-            Jumping = true;
+            OnShoot();
         }
+        
+         if (Input.GetKeyDown(KeyCode.Space) && !Jumping)
+        {
+           OnJump();
+        }
+              
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            Instantiate(bulletPrefab, firepoint.position,firepoint.rotation);
-        }
+        
     }
 
+    //método de tiro
+    public void OnShoot()
+    {
+         Instantiate(bulletPrefab, firepoint.position,firepoint.rotation);       
+
+    }
+
+    //método de pulo
+    public void OnJump()
+    {        
+            rig.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            anim.SetBool("isJumping", true);
+            Jumping = true;        
+        
+    }
+    
     public void OnHit(int dmg)
     {
         hp -= dmg;
